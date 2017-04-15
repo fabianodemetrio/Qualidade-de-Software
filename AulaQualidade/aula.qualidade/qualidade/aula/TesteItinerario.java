@@ -11,8 +11,7 @@ public class TesteItinerario {
 		chamaMetodosWeb.procuraElemento("password", "teste");
 		chamaMetodosWeb.procuraBotao("login");
 		chamaMetodosWeb.clicaBotao("login");
-		chamaMetodosWeb.procuraGenerica("ITINERARY");
-		chamaMetodosWeb.clicaBotao(chamaMetodosWeb.procuraGenerica("ITINERARY"));
+		chamaMetodosWeb.clicaBotaoXPath("//a[@href='mercuryitinerary.php']");
 		String itinerario = chamaMetodosWeb.procuraProxPagina();
 		Assert.assertEquals(itinerario,"http://newtours.demoaut.com/mercuryitinerary.php");
 		chamaMetodosWeb.encerraConfig();

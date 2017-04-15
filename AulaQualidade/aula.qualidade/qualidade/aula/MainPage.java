@@ -19,27 +19,33 @@ public class MainPage {
 	public void testeDeLoginEmBranco() throws Exception {
 		testeDeLogin.loginEmBranco();
 	}
+	@Test
 	
 	public void testeDeLoginErrado()throws Exception {
 		testeDeLogin.erraLogin();
 	}
+	@Test
 	
 	public void testeDeLoginCerto() throws Exception {
 		testeDeLogin.acertaLogin();
 	}
+	@Test
 	
 	public void testeDeLogoff() throws Exception {
 		testeDeLogin.fazerLogoff();
 	}
+	@Test
 	
 	public void testeBuscaVoo() throws Exception {
 		testeDePesquisa.buscaVoo();
 	}
+	@Test
 	
 	public void testePagamentoVoo() throws Exception {
 		testeDePagamento.pagamentoVoo();
 	}
 	
+	@Test
 	public void testeItinerario() throws Exception {
 		testedoItinerario.clicaItinerario();
 	}

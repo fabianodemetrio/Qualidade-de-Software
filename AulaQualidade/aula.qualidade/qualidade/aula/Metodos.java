@@ -46,4 +46,8 @@ public class Metodos {
     public void selecionaLista(String nomeVariavel, String textoVisivel){
         new Select(navega.getDriver().findElement(By.name(nomeVariavel))).selectByVisibleText(textoVisivel);
     }
+    
+    public void clicaBotaoXPath(String nomeBotao){
+    	navega.getDriver().findElement(By.xpath(nomeBotao)).click();
+    }
 }

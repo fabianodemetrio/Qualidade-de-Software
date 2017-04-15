@@ -9,7 +9,7 @@ public class Navegador {
 	private String baseUrl;
 
 	public void driver(){
-    	System.setProperty("webdriver.gecko.driver", "C:\\Users\\Fabiano\\Downloads\\chromedriver_win32\\chromedriver.exe");
+    	System.setProperty("webdriver.gecko.driver", "C:\\Java Libs\\chromedriver.exe");
     	driver = new FirefoxDriver();
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.get(baseUrl);

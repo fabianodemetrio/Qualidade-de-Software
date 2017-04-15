@@ -34,7 +34,7 @@ public class TestePagamento {
 		chamaMetodosWeb.clicaBotao("ticketLess");
 		chamaMetodosWeb.clicaBotao("buyFlights");
 		String confirmacao = chamaMetodosWeb.procuraProxPagina();
-		Assert.assertEquals(confirmacao,"http://newtours.demoaut.com/mercuryreservation2.php");
+		Assert.assertEquals(confirmacao,"http://newtours.demoaut.com/mercurypurchase2.php");
 		chamaMetodosWeb.encerraConfig();
 	}
 }
